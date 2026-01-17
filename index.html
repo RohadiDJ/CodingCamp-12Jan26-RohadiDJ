@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechLogo Nexus - IT & Digital Solutions</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ===== Navbar ===== -->
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+            <img src="image/logo.jpg" alt="TechLogo Logo">
+            <span>TechLogo Nexus</span>
+        </div>
+        <nav class="nav-menu" id="navMenu">
+          <a href="#home">Home</a>
+          <a href="#profile">Our Profile</a>
+          <a href="#services">Services</a>
+          <a href="#message">Message Us</a>
+        </nav>
+
+        <div class="hamburger" id="hamburger">☰</div>
+      </div>
+    </header>
+
+    <!-- ===== Wellcome Guest ===== -->
+    <section id="home" class="section home">
+      <div class="container">
+        <span id="greetingText">Hi, Guest 👋</span>
+        <h2>Welcome to TechLogo Nexus</h2>
+        <span class="tagline">Your Digital Technology Partner</span>
+        <div class="hero-line"></div>
+        
+        <div class="name-input" id="nameInputBox">
+          <input type="text" id="nameInput" placeholder="Enter your name" />
+          <button id="saveNameBtn">Save Name</button>
+        </div>
+
+        <button id="changeNameBtn" class="change-name-btn">Change Name</button>
+      </div>
+    </section>
+
+    <!-- Banner -->
+    <hr>
+    <div class="container">
+      <br><br>
+      <section class="hero">
+        <div class="slider">
+          <div class="slide active">
+            <img src="image/banner/banner 1.jpg" alt="Banner 1">
+          </div>
+          <div class="slide">
+            <img src="image/banner/banner 2.jpg" alt="Banner 2">
+          </div>
+          <div class="slide">
+            <img src="image/banner/banner 3.jpg" alt="Banner 3">
+          </div>
+
+          <!-- Our Profile Banner -->
+          <section id="profile" class="section profile"></section>
+          <div class="hero-text">
+            <h1>Our Profile</h1>
+            <p>TechLogo Nexus An integrated IT and digital solutions platform designed to help businesses build, secure, 
+              and manage their technology infrastructure.</p>
+          </div>
+
+          <!-- Indicator (...) Banner -->
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+    </div>
+      </section>
+    <br><br>
+
+    <!-- About Our Company -->
+    <div class="container">
+      <div class="profile-about modern-card">
+        <h3>About Our Company</h3>
+        <p>TechLogo Nexus is a technology company specializing in website development services, 
+            focusing on providing modern digital solutions for businesses, IT solutions, 
+            and cybersecurity services. Established six months ago, 
+            TechLogo Nexus has proven its excellence and credibility 
+            by serving over 1,000 customers throughout Indonesia.</p>
+        </p>
+      </div>
+
+      <!-- Our Vision & Our Mission -->
+      <div class="profile-vision-mission">
+        <div class="vision modern-card">
+          <h3>Our Vision</h3>
+          <p>To be a trusted partner in providing the best digital solutions 
+            that help business transformation throughout Indonesia.
+          </p>
+          </div>
+        <div class="mission modern-card">
+          <h3>Our Mission</h3>
+          <p>1. Providing high-quality and innovative website creation services.</p>
+          <p>2. Supporting SMEs and large corporations to achieve maximum online visibility.</p>
+          <p>3. Improving customer satisfaction with fast, accurate, and responsive service.</p>
+      </div>
+    </div>
+
+    <!-- ===== Our Services ===== -->
+    <section id="services" class="sections services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-list">
+          <div class="service-card">
+            <h3>Website Development</h3>
+            <p>Build responsive and professional websites tailored to your business needs.</p>
+          </div>
+          <div class="service-card">
+            <h3>Front-End Development</h3>
+            <p>Create interactive and user-friendly interfaces for all devices.</p>
+          </div>
+          <div class="service-card">
+            <h3>Back-End Development</h3>
+            <p>Develop secure and scalable systems for web applications.</p>
+          </div>
+          <div class="service-card">
+            <h3>Website Maintenance</h3>
+            <p>Maintain, update, and improve website performance.</p>
+          </div>
+          <div class="service-card">
+            <h3>Website Optimization</h3>
+            <p>Improve website speed and SEO performance.</p>
+          </div>
+          <div class="service-card">
+            <h3>UI / UX Design</h3>
+            <p>Design clean and intuitive user experiences.</p>
+          </div>
+        </div>
+        <br><br>
+        <div class="service-card">
+          <h3>Deployment & Hosting Setup</h3>
+          <p>Assisting in the process of deploying a website to a server or hosting and configuring the domain so that the website is ready to use.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Message Us ===== -->
+    <section id="message" class="sections message">
+      <div class="container">
+        <center><h1>Message Us</h1></center>
+        <br>
+        <form id="messageForm">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Nama Lengkap"/>
+            <small class="error" id="errorName"></small>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Email"/>
+            <small class="error" id="errorEmail"></small>
+          </div>
+          <div class="form-group">
+            <label for="messageText">Message</label>
+            <textarea id="messageText" placeholder="Pesan"></textarea>
+            <small class="error" id="errorMessage"></small>
+          </div>
+          <br>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Output Message Us -->
+        <div class="message-result" id="messageResult">
+          <h3>Your Message:</h3>
+          <p><strong>Name:</strong> <span id="resultName"></span></p>
+          <p><strong>Email:</strong> <span id="resultEmail"></span></p>
+          <p><strong>Message:</strong> <span id="resultMessage"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© 2026 TechLogo Nexus — A Personal Project</p>
+        <p>Designed & Developed by Rohadi Dwi Junianto</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
